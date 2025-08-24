@@ -1,0 +1,60 @@
+Here’s a checklist based on your professor’s requirements and your current codebase:
+
+1. Replace useState with useReducer for bet and balance
+Current: You use useState for balance in App.jsx and MainGame.jsx.
+Missing: You have not replaced useState with useReducer for bet and balance.
+2. Add re-render components
+Current: React components re-render on state change by default.
+Done: This is covered by React’s state management.
+3. Create 3 custom hooks
+Current: You have useLeaderboard and useDarkMode.
+Missing: Only 2 custom hooks are present; you need one more.
+4. Save the player score in localStorage
+Current: Player score is only in state.
+Missing: You do not persist score to localStorage.
+5. Wrap LeaderBoard component in Suspense with a fallback
+Current: Leaderboard is not wrapped in Suspense.
+Missing: You need to wrap it in <Suspense fallback={...}>.
+6. Create resource wrapper for fetching LeaderBoard data from API
+Current: Data is fetched directly in MainGame and useLeaderboard.
+Missing: No resource wrapper pattern is used.
+7. Pass session/user ID as props to LeaderBoard component
+Current: Leaderboard only receives players.
+Missing: You do not pass session/user ID as a prop.
+8. Implement API call inside resource (fetch leaderboard data)
+Current: API call is in MainGame and useLeaderboard.
+Missing: Should be inside a resource wrapper.
+9. Handle loading state using Suspense fallback
+Current: No Suspense fallback for loading state.
+Missing: Needs Suspense fallback.
+10. Add error boundary around LeaderBoard to catch API errors
+Current: No error boundary is implemented.
+Missing: You need an error boundary component.
+11. Update the balance after each spin
+Current: Balance is updated when buying spins and winning.
+Done: This is implemented.
+12. Lazy loader
+Current: Components are imported directly.
+Missing: You need to use React.lazy for at least one major component (e.g., Leaderboard).
+13. React Router
+Current: You use react-router-dom.
+Done: This is implemented.
+Summary
+Missing tasks:
+
+Replace useState with useReducer for bet and balance.
+Add one more custom hook.
+Save player score in localStorage.
+Wrap LeaderBoard in Suspense with fallback.
+Create resource wrapper for leaderboard API.
+Pass session/user ID as prop to LeaderBoard.
+Implement API call inside resource.
+Handle loading state with Suspense fallback.
+Add error boundary around LeaderBoard.
+Use lazy loader (React.lazy) for at least one component.
+Tasks already done:
+
+React Router.
+Update balance after each spin.
+Components re-render on state change.
+Let me know which task you want to tackle first!
