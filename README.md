@@ -87,3 +87,4 @@ This project demonstrates comprehensive use of React with hooks and state manage
 
 Make sure the backend server is running so the frontend can fetch leaderboard data.
 
+[See screenshots folder](scrnshots/)
